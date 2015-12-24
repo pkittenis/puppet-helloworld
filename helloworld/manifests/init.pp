@@ -4,7 +4,7 @@
 # Uses hiera for key named 'helloworld'
 # 
 class helloworld {
-  $my_hiera_var = hiera('helloworld')
+  # $my_hiera_var = hiera('helloworld')
   user { 'test':
     ensure     => present,
     managehome => true,
