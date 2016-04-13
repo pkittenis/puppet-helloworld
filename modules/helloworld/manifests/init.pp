@@ -5,8 +5,7 @@
 # 
 class helloworld {
   # $my_hiera_var = hiera('helloworld')
-  user { 'test':
+  file { 'test':
     ensure     => present,
-    managehome => true,
   }
 }
